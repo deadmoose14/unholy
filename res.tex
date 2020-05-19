@@ -1,0 +1,108 @@
+\documentclass[letterpaper, 10pt]{article}
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{color}
+\usepackage[margin=1in]{geometry}
+\usepackage{multicol}
+\pagestyle{empty}
+
+\definecolor{mygrey}{RGB}{76,85,106}
+\definecolor{mywhite}{RGB}{229,233,240}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+
+% custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+
+\newcommand{\resheading}[1]{{\large \colorbox{mywhite}{\begin{minipage}{\dimexpr\textwidth-2\fboxsep}
+    {\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+
+\newcommand{\ressubheading}[4]{
+    \begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\begin{document}
+
+\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\large Jonathan Levy} & \href{tel:3522380533}{352-238-0533}\\
+        2132 Orchard Park Dr & \href{mailto:levyjon1992@gmail.com}
+        {levyjon1992@gmail.com} \\
+        Spring Hill, Fl 34608 &  \ 
+\end{tabular*}
+\\
+\vspace{.1in}
+% Education Section -----------------------------
+\resheading{Education}
+\begin{itemize}
+    \item
+        \ressubheading{University of South Florida}{Tampa, Fl}{Bachelor of Arts in Mathematics}{May 2016 - Dec 2019}
+        \begin{itemize}
+                \resitem{Courses: Real Analysis, Abstract Algebra,
+                Vector Calculus, Linear Algebra, Probability Theory,
+                Combinatorics, Graph Theory, 
+                Cryptography, Calculus(I,II,III).}
+        \end{itemize}
+
+    \item
+        \ressubheading{Pasco Hernando State College}{Spring Hill, Fl}
+        {Associate of Arts}{Jan. 2013 - Dec. 2015}
+\end{itemize}
+% End Section ------------------------------------
+\vspace{.1in}
+
+% Work Section ----------------------------------
+\resheading{Work Experience}
+\begin{itemize}
+\item
+    \ressubheading{Sprouts Farmers Market}{Trinity, Fl}{Deli}{May 2019-Present}
+    \begin{itemize}
+        \resitem{Provided engaging, professional, and responsive customer service; routinely
+            solved customer issues and complaints.}
+        \resitem{Assisted with developing streamlined and efficient schedules, and methods 
+            for daily production of products.}
+            \resitem{Assisted with the onboarding process and training of new employees within 
+            the department.}
+    \end{itemize}
+
+\item
+    \ressubheading{Firehouse Subs}{Tampa, Fl}{Team Member}{July 2017- July 2018}
+    \begin{itemize}
+        \resitem{Accurately took and prepared orders under time constraints, and occaisonally
+        trained new employees.}
+        \resitem{Employed a supportive and collaborative attitude to foster a healthy working environment.}
+    \end{itemize}
+\item 
+    \ressubheading{Busch Gardens}{Tampa, Fl}{Server}{March 2016 - Jan. 2017}
+    \begin{itemize}
+        \resitem{Efficiently managed multiple tables, and provided an engaging and friendly 
+            experience for park guests.} 
+        \resitem{Anticipated guest needs, and assisted in increasing restaurant sales through
+            suggestive selling.}
+    \end{itemize}
+\item
+    \ressubheading{Pasco Hernando State College}{Spring Hill, Fl}{Mathematics Tutor}{May 2014 - May 2017}
+    \begin{itemize}
+        \resitem{Assisted GED, remedial, and college-level students in a breadth of topics ranging in difficulty from elementary algebra to differential equations.}
+        \resitem{Falicitated the understanding of mathematical topics by approaching problems in a relatable and practical manner.}
+        \resitem{Coordinated group sessions, ensured equitable attention to all students.}
+    \end{itemize}
+\end{itemize}
+% End Section -----------------------------------
+\resheading{Skills}
+    
+\begin{description}
+    \item[Technical Skills:] 
+        \ \\Proficient with Python, \LaTeX, Bash, GNU/Linux(various distributions: SUSE, Fedora, Debian), familiarity with *BSD, Git, Microsoft Office, and MacOS
+    \item[Miscellaneous:]
+        \ \\ Analytical, detail-oriented, strong written and verbal communication skills, and excellent problem solving skills. Adept at both working alone and in groups. 
+    \item[Interests:]
+        \ \\Mechanical puzzles(former speedsolver), vintage hardware refurbishing, hardware virtualization, 3D graphics, cartography.
+\end{description}
+\end{document}
+
