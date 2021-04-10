@@ -33,7 +33,7 @@
     \textbf{\large Jonathan Levy} & \href{tel:3522380533}{352-238-0533}\\
         2132 Orchard Park Dr & \href{mailto:levyjon1992@gmail.com}
         {levyjon1992@gmail.com} \\
-        Spring Hill, Fl 34608 &  \ 
+        Spring Hill, Fl 34608 
 \end{tabular*}
 \\
 \vspace{.1in}
@@ -48,7 +48,6 @@
                 Combinatorics, Graph Theory, 
                 Cryptography, Calculus(I,II,III).}
         \end{itemize}
-
     \item
         \ressubheading{Pasco Hernando State College}{Spring Hill, Fl}
         {Associate of Arts}{Jan. 2013 - Dec. 2015}
@@ -60,35 +59,8 @@
 \resheading{Work Experience}
 \begin{itemize}
 \item
-    \ressubheading{Sprouts Farmers Market}{Trinity, Fl}{Deli}{May 2019-March 2020}
-    \begin{itemize}
-        \resitem{Provided engaging, professional, and responsive customer service; routinely
-            solved customer issues and complaints.}
-        \resitem{Assisted with developing streamlined and efficient schedules, and methods 
-            for daily production of products.}
-            \resitem{Assisted with the onboarding process and training of new employees within 
-            the department.}
-    \end{itemize}
-\ \\
-\item
-    \ressubheading{Firehouse Subs}{Tampa, Fl}{Team Member}{July 2017- July 2018}
-    \begin{itemize}
-        \resitem{Accurately took and prepared orders under time constraints, and occasionally
-        trained new employees.}
-        \resitem{Employed a supportive and collaborative attitude to foster a healthy working environment.}
-    \end{itemize}
-\ \\
-\item 
-    \ressubheading{Busch Gardens}{Tampa, Fl}{Server}{March 2016 - Jan. 2017}
-    \begin{itemize}
-        \resitem{Efficiently managed multiple tables, and provided an engaging and friendly 
-            experience for park guests.} 
-        \resitem{Anticipated guest needs, and assisted in increasing restaurant sales through
-            suggestive selling.}
-    \end{itemize}
-\ \\
-\item
     \ressubheading{Pasco Hernando State College}{Spring Hill, Fl}{Mathematics Tutor}{May 2014 - May 2017}
+    
     \begin{itemize}
         \resitem{Assisted GED, remedial, and college-level students in a breadth of topics ranging in difficulty from elementary algebra to differential equations.}
         \resitem{Facilitated the understanding of mathematical topics by approaching problems in a relatable and practical manner.}
@@ -96,15 +68,38 @@
     \end{itemize}
 \end{itemize}
 % End Section -----------------------------------
+
+% Project Section 
+\resheading{Projects}
+
+\begin{itemize}
+\item
+    \ressubheading{Known Plain-Text Attack}{}{\href{http://github.com/deadmoose14/enc}{Source}}{}
+    \begin{itemize}
+        \resitem{
+        Used a known-plaintext attack in my Cryptography course to successfully decrypt an image for a class project. The prior knowledge for this project was the encrypted image, and that the image was padded in multiples of 24-bytes. By using the first 16-bytes of the file header, this provided a starting point for obtaining the key in order to capture the flag.}
+    \end{itemize}
+\item
+    \ressubheading{Blockchain Challenge}{}{}{}
+        \begin{itemize}
+            \resitem{
+            Participated in, and won, an in-class cryptocurrency challenge by verifying pending transactions with the RSA signature of the previous transaction on the blockchain, then doing the proof of work. Each transaction had an associated 'fee' whereby the total accumulated fees dictated the winner. Since there were no restrictions, I automated the process in Bash by parsing all pending transaction for the highest fees, verified the transactions, initiated the proof of work, and generated the next signature for the block.}
+        \end{itemize}
+\end{itemize}
+% End Section 
 \resheading{Skills}
-    
-\begin{description}
-    \item[Technical Skills:] 
-        \ \\Proficient with Python, C, \LaTeX, Bash, GNU/Linux(various distributions: SUSE, Fedora, Debian), RPM Packaging, familiarity with *BSD, Git, Microsoft Office, and MacOS
-    \item[Miscellaneous:]
-        \ \\ Analytical, detail-oriented, strong written and verbal communication skills, and excellent problem solving skills. Adept at both working alone and in groups. 
-    \item[Interests:]
-        \ \\Mechanical puzzles(former speedsolver), vintage hardware refurbishing, hardware virtualization, 3D graphics, cartography.
-\end{description}
+\begin{itemize}
+    \item 
+        \ressubheading{Technical}{}{}{}
+        \begin{itemize}
+            \resitem{Working knowledge of Python, Bash, \LaTeX, Git, Docker, and AWS(currently hosting a game server). Orchestration and automation tools such as Kubernetes and Ansible. GNU/Linux (kernel configuration/optimization and hardening), RPM packaging and package build automation via openQA.}
+        \end{itemize}
+    \item
+        \ressubheading{Other}{}{}{}
+        \begin{itemize}
+            \resitem{I'm an analytical, detail-oriented, problem solver that enjoys breaking and hacking at technologies in order to determine how they're built. I am an excellent writer that meticulously documents my methodologies. I'm a team player that enjoys intelligent, stimulating collaboration on projects.}
+        \end{itemize}
+\end{itemize}
 \end{document}
+
 
